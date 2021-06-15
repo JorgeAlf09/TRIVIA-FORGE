@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(125, 217, 248);
+    width: 100%;
+
+}
+
+article{
+    background-color: rgb(125, 231, 3);
+    width: 100%;
+}
+
+footer{
+    background-color: grey;
+    width: 100%;
+}
