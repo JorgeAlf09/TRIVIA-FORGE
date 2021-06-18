@@ -43,6 +43,11 @@ article h3{
     text-align: center;
 }
 
+.ingresar_nombre{
+    display: flex;
+    justify-content: center;
+}
+
 /*---PIES----*/
 footer{
     background-color: grey;
