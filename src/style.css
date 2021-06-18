@@ -35,8 +35,20 @@ article{
     width: 100%;
 }
 
+article h1{
+    text-align: center;
+}
+
+article h3{
+    text-align: center;
+}
+
 /*---PIES----*/
 footer{
     background-color: grey;
     width: 100%;
+}
+
+footer h1{
+    text-align: center;
 }
