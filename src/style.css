@@ -23,6 +23,16 @@ header{
 header h1{
     text-align: justify;
     display: inline-block;
+    padding-top: 30px;
+}
+
+header img{
+    width: 160px;
+    height: 105px;
+    display: block;
+    margin: auto;
+    margin-top: -70px;
+    padding-left: 300px;
 }
 
 #b{
