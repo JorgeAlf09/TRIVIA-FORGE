@@ -74,9 +74,36 @@ footer{
 
 footer h1{
     text-align: center;
+    padding-top: 20px;
 }
 
 .redes{
     display: flex;
     justify-content: center;
+    padding: 40px;
+    align-items: center;
+}
+
+.redes .fab{
+    margin: 0 15px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 80px;
+    background: #000;
+    border-radius: 50%;
+    color: white;
+}
+
+.redes .icon1:hover{
+    background: #3b5998;
+}
+
+.redes .icon2:hover{
+    background: #C13584;
+}
+
+.redes .icon3:hover{
+    background: #00acee;
 }
