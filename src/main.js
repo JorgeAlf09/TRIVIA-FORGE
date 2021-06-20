@@ -5,7 +5,8 @@ function captura(){
         alert("Es obligatorio ingresar un nombre para empezar");
         document.getElementById("nombre").focus();
     }else{
-        alert("Hola " + nombrejug);
+        //var nuevosal = document.getElementById("saludjug").value;
+        //document.getElementById('<%=saludjug.ClientID %>').innerHTML = "Hola "+ nombrejug;
     }
 }
 
