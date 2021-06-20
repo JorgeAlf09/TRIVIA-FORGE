@@ -19,7 +19,6 @@ function SoloLetras(e){
 }
 
 //Función ocultar elementos.
-
 function ocultar1(){
     document.getElementById("txtbox").style.display = 'none';
     document.getElementById("btn").style.display = 'none';
