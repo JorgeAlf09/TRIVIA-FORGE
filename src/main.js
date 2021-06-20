@@ -24,6 +24,13 @@ function ocultar1(){
     document.getElementById("btn").style.display = 'none';
 }
 
+//Función mostrar elementos.
+function mostrar1(){
+    document.getElementById("tipoA").style.display = 'block';
+    document.getElementById("tipoB").style.display = 'block';
+    document.getElementById("label2").style.display = 'block';
+}
+
 //Función de captura de datos para reflejar el nombre del jugador.
 function captura(){
     var nombrejug = document.getElementById("txtbox").value;
@@ -33,5 +40,6 @@ function captura(){
     }else{
         document.querySelector('#saludjug').innerText = "HOLA "+ nombrejug;
         ocultar1();
+        mostrar1();
     }
 }

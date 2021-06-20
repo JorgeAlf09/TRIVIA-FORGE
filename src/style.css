@@ -78,7 +78,7 @@ article h3{
 }
 
 .boton_enviar input{
-    width: 120px;
+    width: 140px;
     height: 70px;
     background: #11285c;
     color: white;
@@ -101,6 +101,37 @@ article img{
 
 input:focus{
     outline: none;
+}
+
+/*-----PARA ELEGIR TIPO DE PREGUNTAS-----*/
+
+.elegir_tipo{
+    display: flex;
+    justify-content: center;
+}
+
+.elegir_tipo input{
+    height: 60px;
+    background: #11285c;
+    color: white;
+    font-size: 30px;
+    border-radius: 30%;
+    border: none;
+    cursor: pointer;
+}
+
+.elegir_tipo input:hover{
+    background: #000;
+}
+
+.elegir_tipo #tipoA{
+    width: 130px;
+    margin-right: 10px;
+}
+
+.elegir_tipo #tipoB{
+    width: 180px;
+    margin-left: 60px;
 }
 
 /*---PIES----*/

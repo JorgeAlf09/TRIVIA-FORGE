@@ -20,14 +20,23 @@
         <div class="textos">
             <h1>BIENVENIDO!</h1>
             <h3 id="saludjug">POR FAVOR INGRESA TU NOMBRE</h3>
+            <h3 id="label2" style="display: none;">POR FAVOR ELIGE EL TIPO DE PREGUNTAS PARA EMPEZAR A JUGAR</h3>
         </div>
+        
         <div class="ingresar_nombre">
                 <input type="text" name="nombre" id="txtbox" placeholder="Ingresa tu nombre" 
                 maxlength="13" onkeypress="return SoloLetras(event)" required>
         </div>
+        
         <div class="boton_enviar">
             <input type="submit" id="btn" onclick="captura()" value="Registrar" required>
         </div>
+
+        <div class="elegir_tipo">
+            <input type="button" id="tipoA" value="Música" style="display: none;" required>
+            <input type="button" id="tipoB" value="Lucha Libre" style="display: none;" required>
+        </div>
+        <br>
         <img src="img/tri2.png">
 
     </article>
