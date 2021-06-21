@@ -18,10 +18,10 @@
     </header>
     <article>
         <div class="textos">
-            <h1>BIENVENIDO!</h1>
+            <h1 id="label1">BIENVENIDO!</h1>
             <h3 id="saludjug">POR FAVOR INGRESA TU NOMBRE</h3>
             <h3 id="label2" style="display: none;">POR FAVOR ELIGE EL TIPO DE PREGUNTAS PARA EMPEZAR A JUGAR</h3>
-            <h3 id="label3" style="display: none;">RECUERDA QUE TENDRÁS 20 SEGUNDOS PARA RESPONDER. DE LO CONTRARIO VALIDARÁS LA RESPUESTA Y DEBERÁS PASAR A LA SIGUIENTE.</h3>
+            <h3 id="label3" style="display: none;">RECUERDA QUE TENDRÁS 20 SEGUNDOS PARA RESPONDER. DE LO CONTRARIO, VERÁS REFLEJADA LA RESPUESTA Y DEBERÁS PASAR A LA SIGUIENTE.</h3>
         </div>
         
         <div class="ingresar_nombre">
@@ -35,12 +35,16 @@
 
         <div class="elegir_tipo">
             <input type="button" id="tipoA" value="Música" style="display: none;" onclick="btnMusica()" required>
-            <input type="button" id="tipoB" value="Lucha Libre" style="display: none;" required>
+            <input type="button" id="tipoB" value="Lucha Libre" style="display: none;" onclick="btnLucha()" required>
         </div>
 
         <div class="boton_empezar">
             <input type="button" id="btnEmp1" value="Empecemos" style="display: none;" required>
             <input type="button" id="btnEmp2" value="Empecemos" style="display: none;" required>
+        </div>
+
+        <div class="boton_volver">
+            <input type="button" id="btnVolver" value="Volver" style="display: none;" >
         </div>
         <br>
         <img src="img/tri2.png">

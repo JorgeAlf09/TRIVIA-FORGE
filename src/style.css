@@ -155,6 +155,29 @@ input:focus{
     background: #000;
 }
 
+/*-----PARA VOLVER------*/
+
+.boton_volver{
+    display: flex;
+    justify-content: left;
+    padding-left: 10px;
+}
+
+.boton_volver input{
+    width: 100px;
+    height: 60px;
+    background: #11285c;
+    color: white;
+    font-size: 30px;
+    border-radius: 30%;
+    border: none;
+    cursor: pointer;
+}
+
+.boton_volver input:hover{
+    background: #000;
+}
+
 /*---PIES----*/
 footer{
     background-color: grey;

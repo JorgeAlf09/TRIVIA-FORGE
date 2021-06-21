@@ -46,15 +46,18 @@ function mostrarIngreNom(){
 
 //Función ocultar elementos para cuando Se elige el tipo de pregunta Música.
 function ocultarMusica(){
+    document.getElementById("label1").style.display = 'none';
+    document.getElementById("saludjug").style.display = 'none';
+    document.getElementById("label2").style.display = 'none';
     document.getElementById("tipoA").style.display = 'none';
     document.getElementById("tipoB").style.display = 'none';
-    document.getElementById("label2").style.display = 'none';
 }
 
 //Función ocultar elementos para cuando Se elige el tipo de pregunta Música.
 function mostrarMusica(){
     document.getElementById("btnEmp1").style.display = 'block';
     document.getElementById("label3").style.display = 'block';
+    document.getElementById("btnVolver").style.display = 'block';
 }
 
 //Función que une las 2 funciones para el botón de Música.
@@ -63,22 +66,24 @@ function btnMusica(){
     mostrarMusica();
 }
 
-/*Función ocultar elementos para cuando Se elige el tipo de pregunta Música.
-function ocultarMusica(){
+//Función ocultar elementos para cuando Se elige el tipo de pregunta Música.
+function ocultarLucha(){
+    document.getElementById("label1").style.display = 'none';
+    document.getElementById("saludjug").style.display = 'none';
+    document.getElementById("label2").style.display = 'none';
     document.getElementById("tipoA").style.display = 'none';
     document.getElementById("tipoB").style.display = 'none';
-    document.getElementById("label2").style.display = 'none';
 }
 
 //Función ocultar elementos para cuando Se elige el tipo de pregunta Música.
-function mostrarMusica(){
-    document.getElementById("btnEmp1").style.display = 'block';
+function mostrarLucha(){
+    document.getElementById("btnEmp2").style.display = 'block';
     document.getElementById("label3").style.display = 'block';
+    document.getElementById("btnVolver").style.display = 'block';
 }
 
 //Función que une las 2 funciones para el botón de Música.
-function btnMusica(){
-    ocultarMusica();
-    mostrarMusica();
-}*/
-
+function btnLucha(){
+    ocultarLucha();
+    mostrarLucha();
+}
