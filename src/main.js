@@ -18,19 +18,6 @@ function SoloLetras(e){
 
 }
 
-//Función ocultar elementos.
-function ocultar1(){
-    document.getElementById("txtbox").style.display = 'none';
-    document.getElementById("btn").style.display = 'none';
-}
-
-//Función mostrar elementos.
-function mostrar1(){
-    document.getElementById("tipoA").style.display = 'block';
-    document.getElementById("tipoB").style.display = 'block';
-    document.getElementById("label2").style.display = 'block';
-}
-
 //Función de captura de datos para reflejar el nombre del jugador.
 function captura(){
     var nombrejug = document.getElementById("txtbox").value;
@@ -39,7 +26,59 @@ function captura(){
         document.getElementById("txtbox").focus();
     }else{
         document.querySelector('#saludjug').innerText = "HOLA "+ nombrejug;
-        ocultar1();
-        mostrar1();
+        ocultarIngreNom();
+        mostrarIngreNom();
     }
 }
+
+//Función ocultar elementos para cuando se ingresa el nombre.
+function ocultarIngreNom(){
+    document.getElementById("txtbox").style.display = 'none';
+    document.getElementById("btn").style.display = 'none';
+}
+
+//Función mostrar elementos para cuando se ingresa el nombre.
+function mostrarIngreNom(){
+    document.getElementById("tipoA").style.display = 'block';
+    document.getElementById("tipoB").style.display = 'block';
+    document.getElementById("label2").style.display = 'block';
+}
+
+//Función ocultar elementos para cuando Se elige el tipo de pregunta Música.
+function ocultarMusica(){
+    document.getElementById("tipoA").style.display = 'none';
+    document.getElementById("tipoB").style.display = 'none';
+    document.getElementById("label2").style.display = 'none';
+}
+
+//Función ocultar elementos para cuando Se elige el tipo de pregunta Música.
+function mostrarMusica(){
+    document.getElementById("btnEmp1").style.display = 'block';
+    document.getElementById("label3").style.display = 'block';
+}
+
+//Función que une las 2 funciones para el botón de Música.
+function btnMusica(){
+    ocultarMusica();
+    mostrarMusica();
+}
+
+/*Función ocultar elementos para cuando Se elige el tipo de pregunta Música.
+function ocultarMusica(){
+    document.getElementById("tipoA").style.display = 'none';
+    document.getElementById("tipoB").style.display = 'none';
+    document.getElementById("label2").style.display = 'none';
+}
+
+//Función ocultar elementos para cuando Se elige el tipo de pregunta Música.
+function mostrarMusica(){
+    document.getElementById("btnEmp1").style.display = 'block';
+    document.getElementById("label3").style.display = 'block';
+}
+
+//Función que une las 2 funciones para el botón de Música.
+function btnMusica(){
+    ocultarMusica();
+    mostrarMusica();
+}*/
+

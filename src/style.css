@@ -134,6 +134,27 @@ input:focus{
     margin-left: 60px;
 }
 
+/*----PARA EMPEZAR--*/
+
+.boton_empezar{
+    display: flex;
+    justify-content: center;
+}
+
+.boton_empezar input{
+    height: 70px;
+    background: #11285c;
+    color: white;
+    font-size: 30px;
+    border-radius: 30%;
+    border: none;
+    cursor: pointer;
+}
+
+.boton_empezar input:hover{
+    background: #000;
+}
+
 /*---PIES----*/
 footer{
     background-color: grey;
