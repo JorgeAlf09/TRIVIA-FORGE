@@ -87,3 +87,17 @@ function btnLucha(){
     ocultarLucha();
     mostrarLucha();
 }
+
+//Función para que retorne a la página de inicio.
+function volverHome(){
+    document.getElementById("btnEmp1").style.display = 'none';
+    document.getElementById("btnEmp2").style.display = 'none';
+    document.getElementById("label3").style.display = 'none';
+    document.getElementById("btnVolver").style.display = 'none';
+    document.getElementById("label1").style.display = 'block';
+    document.getElementById("saludjug").style.display = 'block';
+    document.getElementById("txtbox").style.display = 'block';
+    document.getElementById("btn").style.display = 'block';
+    document.querySelector('#saludjug').innerText = "POR FAVOR INGRESA TU NOMBRE";
+    document.getElementById("txtbox").value = "";
+}
