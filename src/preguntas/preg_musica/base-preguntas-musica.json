@@ -5,7 +5,9 @@
         "respuesta": "Thriller",
         "incorrecta1": "Off The Wall",
         "incorrecta2": "Bad",
-        "incorrecta3": "Dangerous"
+        "incorrecta3": "Dangerous",
+        "imagen": "https://i.ibb.co/hm6CSPg/michaeljackson.jpg",
+        "objectFit": "contain"
     },
     {
         "categoria": "Música",
@@ -13,7 +15,9 @@
         "respuesta": "Kill 'Em All",
         "incorrecta1": "...And Justice For All",
         "incorrecta2": "Metallica(Black Album)",
-        "incorrecta3": "Master Of Puppets"
+        "incorrecta3": "Master Of Puppets",
+        "imagen": "https://i.ibb.co/xSsJ9Gf/metallica.jpg",
+        "objectFit": "contain"
     },
     {
         "categoria": "Música",
@@ -21,7 +25,9 @@
         "respuesta": "Whitney Houston",
         "incorrecta1": "Tina Turner",
         "incorrecta2": "Sarah McLachlan",
-        "incorrecta3": "Mariah Carey"
+        "incorrecta3": "Mariah Carey",
+        "imagen": "https://i.ibb.co/mqf6h8n/titanic.jpg",
+        "objectFit": "contain"
     },
     {
         "categoria": "Música",
@@ -29,6 +35,8 @@
         "respuesta": "Ten",
         "incorrecta1": "Yield",
         "incorrecta2": "Lightning Bolt",
-        "incorrecta3": "No Code"
+        "incorrecta3": "No Code",
+        "imagen": "https://i.ibb.co/4StsvfW/pearljam.jpg",
+        "objectFit": "contain"
     }
 ]

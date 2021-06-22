@@ -5,7 +5,9 @@
         "respuesta": "Walter",
         "incorrecta1": "Cm Punk",
         "incorrecta2": "AJ Styles",
-        "incorrecta3": "Brock Lesnar"
+        "incorrecta3": "Brock Lesnar",
+        "imagen": "https://i.ibb.co/PQBNYFd/walter.webp",
+        "objectFit": "cover"
     },
     {
         "categoria": "Lucha Libre",
@@ -13,7 +15,9 @@
         "respuesta": "World Championship Wrestling",
         "incorrecta1": "Total Nonstop Action",
         "incorrecta2": "Ring of Honor",
-        "incorrecta3": "New Japan Pro Wrestling"
+        "incorrecta3": "New Japan Pro Wrestling",
+        "imagen": "https://i.ibb.co/D9Z2Kgc/ajstyles.jpg",
+        "objectFit": "contain"
     },
     {
         "categoria": "Lucha Libre",
@@ -21,7 +25,9 @@
         "respuesta": "Will Ospreay",
         "incorrecta1": "Ricochet",
         "incorrecta2": "Puma King",
-        "incorrecta3": "Kazuchika Okada"
+        "incorrecta3": "Kazuchika Okada",
+        "imagen": "https://i.ibb.co/ss76gdv/willospreay.jpg",
+        "objectFit": "contain"
     },
     {
         "categoria": "Lucha Libre",
@@ -29,6 +35,8 @@
         "respuesta": "Lita",
         "incorrecta1": "Trish Stratus",
         "incorrecta2": "Mae Young",
-        "incorrecta3": "Alundra Blayze"
+        "incorrecta3": "Alundra Blayze",
+        "imagen": "https://i.ibb.co/JtX9QD9/maeyoung.jpg",
+        "objectFit": "contain"
     }
 ]
