@@ -1,0 +1,10 @@
+[
+    {
+        "categoria": "Música",
+        "pregunta": "¿Cuál fue el álbum más vendido en la historia, de Michael Jackson?",
+        "respuesta": "Thriller",
+        "incorrecta1": "Off The Wall",
+        "incorrecta2": "Bad",
+        "incorrecta3": "Dangerous"
+    }
+]
