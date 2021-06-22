@@ -1,0 +1,34 @@
+[
+    {
+        "categoria": "Lucha Libre",
+        "pregunta": "¿Quién es el luchador con el reinado más largo en la era moderna de WWE?",
+        "respuesta": "Walter",
+        "incorrecta1": "Cm Punk",
+        "incorrecta2": "AJ Styles",
+        "incorrecta3": "Brock Lesnar"
+    },
+    {
+        "categoria": "Lucha Libre",
+        "pregunta": "¿En qué empresa debutó AJ Styles?",
+        "respuesta": "World Championship Wrestling",
+        "incorrecta1": "Total Nonstop Action",
+        "incorrecta2": "Ring of Honor",
+        "incorrecta3": "New Japan Pro Wrestling"
+    },
+    {
+        "categoria": "Lucha Libre",
+        "pregunta": "Selecciona el nombre del luchador.",
+        "respuesta": "Will Ospreay",
+        "incorrecta1": "Ricochet",
+        "incorrecta2": "Puma King",
+        "incorrecta3": "Kazuchika Okada"
+    },
+    {
+        "categoria": "Lucha Libre",
+        "pregunta": "¿Quién de las opciones, es la luchadora más veterana?",
+        "respuesta": "Lita",
+        "incorrecta1": "Trish Stratus",
+        "incorrecta2": "Mae Young",
+        "incorrecta3": "Alundra Blayze"
+    }
+]
