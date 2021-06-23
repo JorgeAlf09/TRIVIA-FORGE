@@ -10,6 +10,8 @@
     <title>Trivias's Game</title>
 </head>
 <body>
+    <script src="preg_luchas.js"></script>
+
     <header>
         <a href="../../index.html"><h1 id="a">TRIVIA'S GAME</h1></a>
         <h1 id="b">LA MEJOR WEB DE TRIVIAS</h1>
@@ -18,17 +20,19 @@
 
     <article>
         <div id="preguntas_trivia" class="preguntas_trivia">
+            <span id="countdown">20</span>
             <div class="contenedor">
+                <label id="cant_de_preg">0 de 4</label>
                 <div class="encabezado">
-                    <div class="categoria" id="label1">Categoría</div>
-                    <div class="pregunta" id="label2">Pregunta</div>
-                    <img src="" class="foto" id="foto">
+                    <div class="categoria" id="categoria">Categoría</div>
+                    <div class="pregunta" id="pregunta">Pregunta</div>
+                    <img src="" class="foto" id="imagen">
                 </div>
 
-                <div class="btn_respuesta" id="resp1" onclick="presionar_boton(0)">Opción 1</div>
-                <div class="btn_respuesta" id="resp2" onclick="presionar_boton(1)">Opción 2</div>
-                <div class="btn_respuesta" id="resp3" onclick="presionar_boton(2)">Opción 3</div>
-                <div class="btn_respuesta" id="resp4" onclick="presionar_boton(3)">Opción 4</div>
+                <div class="btn_respuesta" id="resp1" onclick="">Respuesta 1</div>
+                <div class="btn_respuesta" id="resp2" onclick="">Respuesta 2</div>
+                <div class="btn_respuesta" id="resp3" onclick="">Respuesta 3</div>
+                <div class="btn_respuesta" id="resp4" onclick="">Respuesta 4</div>
             </div>
         </div>
 
@@ -45,7 +49,6 @@
             <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram icon2"></i></a>
             <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter icon3"></i></a>
         </div>
-    </footer>
-    
+    </footer> 
 </body>
 </html>
