@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="preguntas.css" type="text/css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"/>
-    <link rel="shortcut icon" type="image/x-icon" href="img/tri2.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../img/tri2.png">
     <title>Trivias's Game</title>
 </head>
 <body>
-    <script src="preg_luchas.js"></script>
+    
 
     <header>
         <a href="../../index.html"><h1 id="a">TRIVIA'S GAME</h1></a>
@@ -20,7 +20,8 @@
 
     <article>
         <div id="preguntas_trivia" class="preguntas_trivia">
-            <span id="countdown">20</span>
+            <span id="countdown" onclick="cronom()"></span>
+            
             <div class="contenedor">
                 <label id="cant_de_preg">0 de 4</label>
                 <div class="encabezado">
@@ -35,6 +36,8 @@
                 <div class="btn_respuesta" id="resp4" onclick="">Respuesta 4</div>
             </div>
         </div>
+        
+        <script src="preg_luchas.js"></script>
 
         <br>
         <img src="../../img/tri2.png">
