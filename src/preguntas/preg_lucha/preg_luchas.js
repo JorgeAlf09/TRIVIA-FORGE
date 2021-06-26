@@ -51,6 +51,33 @@ function mostrarPregyAlt1(){
     document.getElementById("resp4").innerHTML = "Brock Lesnar";
 }
 
+function mostrarPregyAlt2(){
+    document.getElementById("categoria").innerHTML = "Lucha Libre";
+    document.getElementById("pregunta").innerHTML = "¿En qué empresa debutó AJ Styles?";
+    document.getElementById("resp1").innerHTML = "Total Nonstop Action";
+    document.getElementById("resp2").innerHTML = "World Championship Wrestling";
+    document.getElementById("resp3").innerHTML = "Ring of Honor";
+    document.getElementById("resp4").innerHTML = "New Japan Pro Wrestling";
+}
+
+function mostrarPregyAlt3(){
+    document.getElementById("categoria").innerHTML = "Lucha Libre";
+    document.getElementById("pregunta").innerHTML = "Selecciona el nombre del luchador.";
+    document.getElementById("resp1").innerHTML = "Ricochet";
+    document.getElementById("resp2").innerHTML = "Kazuchika Okada";
+    document.getElementById("resp3").innerHTML = "Puma King";
+    document.getElementById("resp4").innerHTML = "Will Ospreay";
+}
+
+function mostrarPregyAlt4(){
+    document.getElementById("categoria").innerHTML = "Lucha Libre";
+    document.getElementById("pregunta").innerHTML = "¿Quién de las opciones, es la luchadora más veterana?";
+    document.getElementById("resp1").innerHTML = "Mae Young";
+    document.getElementById("resp2").innerHTML = "Trish Stratus";
+    document.getElementById("resp3").innerHTML = "Lita";
+    document.getElementById("resp4").innerHTML = "Alundra Blayze";
+}
+
 cronom();
 pregRecib();
 mostrarPregyAlt1();
