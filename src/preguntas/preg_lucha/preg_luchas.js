@@ -40,5 +40,17 @@ function reiniciarCronom(){
     }
 }
 
+
+//Función mostrar preguntas y alternativas.
+function mostrarPregyAlt1(){
+    document.getElementById("categoria").innerHTML = "Lucha Libre";
+    document.getElementById("pregunta").innerHTML = "¿Quién es el luchador con el reinado más largo en la era moderna de WWE?";
+    document.getElementById("resp1").innerHTML = "Cm Punk";
+    document.getElementById("resp2").innerHTML = "AJ Styles";
+    document.getElementById("resp3").innerHTML = "Walter";
+    document.getElementById("resp4").innerHTML = "Brock Lesnar";
+}
+
 cronom();
 pregRecib();
+mostrarPregyAlt1();
