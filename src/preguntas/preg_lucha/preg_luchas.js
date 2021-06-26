@@ -9,8 +9,7 @@ function cronom(){
             cuentaRegre = 20;
             alert("Su tiempo ha finalizado. Continúa con la siguiente pregunta");
             pregRecib();
-            reiniciarCronom();
-            
+            reiniciarCronom();          
         }else{
             cuentaRegre--; // Quiere decir que va reduciendo de 1 en 1.
             setTimeout("cronom()", 1E3); //El 1E3 es igual a escribir 1000, estoy pidiendo que en 1000 milisegundos reduzca el tiempo.
@@ -26,6 +25,8 @@ function pregRecib(){
         alert("Se terminó el juego");
         document.getElementById("countdown").style.display = 'none';
         document.getElementById("cant_de_preg").innerHTML = "4 de 4";
+        reiniciarCronom = null;
+
     }else{
         cantPreg++;
     }
@@ -36,13 +37,6 @@ function reiniciarCronom(){
     document.getElementById("countdown").innerHTML = cuentaRegre;
     if(cronom()==0){
         cuentaRegre = 20;
-    }
-}
-
-//Función de detener cuenta regresiva.
-function detenerJuego(){
-    if(cantPreg == 6){
-        
     }
 }
 
