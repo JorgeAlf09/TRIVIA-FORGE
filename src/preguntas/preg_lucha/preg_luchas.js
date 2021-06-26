@@ -1,6 +1,8 @@
 //--------------FUNCIONES DURANTE LAS TRIVIAS---------------------------//
 var cuentaRegre = 20; //PARA CRONÓMETRO
 var cantPreg = 1; //PARA CRONÓMETRO
+var img = document.getElementById("imagen");
+var bckgrnd = document.getElementById("fondo");
 
 
 //Función del cronómetro.
@@ -10,7 +12,8 @@ function cronom(){
             cuentaRegre = 20;
             alert("Su tiempo ha finalizado. Continúa con la siguiente pregunta");
             pregRecib();
-            reiniciarCronom();          
+            reiniciarCronom();
+            cambioPreguntas();
         }else{
             cuentaRegre--; // Quiere decir que va reduciendo de 1 en 1.
             setTimeout("cronom()", 1E3); //El 1E3 es igual a escribir 1000, estoy pidiendo que en 1000 milisegundos reduzca el tiempo.
@@ -85,39 +88,41 @@ function mostrarPregyAlt4(){
 
 //Función de acomodar todo el panel.
 function acomodarPanel1(){
-    var img = document.getElementById("imagen");
-    var bckgrnd = document.getElementById("fondo");
-
     img.setAttribute("src","../fotos trivias/lucha/walter.jpg");
     img.style.width = "600px";
-    img.style.height = "370px";
+    img.style.height = "370px";   
 }
 
 function acomodarPanel2(){
-    var img = document.getElementById("imagen");
-    var bckgrnd = document.getElementById("fondo");
-
     img.setAttribute("src","../fotos trivias/lucha/ajstyles.jpg");
     img.style.width = "400px";
     img.style.height = "300px";
 }
 
 function acomodarPanel3(){
-    var img = document.getElementById("imagen");
-    var bckgrnd = document.getElementById("fondo");
-
     img.setAttribute("src","../fotos trivias/lucha/willospreay.jpg");
     img.style.width = "400px";
     img.style.height = "350px";
 }
 
 function acomodarPanel4(){
-    var img = document.getElementById("imagen");
-    var bckgrnd = document.getElementById("fondo");
-
     img.setAttribute("src","../fotos trivias/lucha/maeyoung.jpg");
     img.style.width = "400px";
     img.style.height = "300px";
+}
+
+//Función cambiar preguntas.
+function cambioPreguntas(){
+    if (cantPreg == 3){
+        mostrarPregyAlt1 = null;
+        mostrarPregyAlt2();
+    }if(cantPreg == 4){
+        mostrarPregyAlt2 = null;
+        mostrarPregyAlt3();
+    }if(cantPreg == 5){
+        mostrarPregyAlt3 = null;
+        mostrarPregyAlt4();
+    }
 }
 
 cronom();
