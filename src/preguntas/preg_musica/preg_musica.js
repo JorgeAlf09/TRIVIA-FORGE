@@ -95,19 +95,19 @@ function acomodarPanel1(){
 
 function acomodarPanel2(){
     img.setAttribute("src","../fotos trivias/música/metallica.jpg");
-    img.style.width = "400px";
-    img.style.height = "300px";
+    img.style.width = "670px";
+    img.style.height = "370px";
 }
 
 function acomodarPanel3(){
     img.setAttribute("src","../fotos trivias/música/titanic.jpg");
     img.style.width = "400px";
-    img.style.height = "350px";
+    img.style.height = "400px";
 }
 
 function acomodarPanel4(){
     img.setAttribute("src","../fotos trivias/música/pearljam.jpg");
-    img.style.width = "400px";
+    img.style.width = "650px";
     img.style.height = "300px";
 }
 
