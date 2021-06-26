@@ -1,37 +1,130 @@
 //--------------FUNCIONES DURANTE LAS TRIVIAS---------------------------//
+var cuentaRegre = 20; //PARA CRONÓMETRO
+var cantPreg = 1; //PARA CRONÓMETRO
+var img = document.getElementById("imagen");
+var bckgrnd = document.getElementById("fondo");
+
 
 //Función del cronómetro.
 function cronom(){
-    var cuentaRegre = 20;
-    document.getElementById("cuenRegr").innerHTML = cuentaRegre;
-    if(cuentaRegre == 0){
-        alert("Su tiempo ha finalizado.");
+    document.getElementById("countdown").innerHTML = cuentaRegre;
+        if(cuentaRegre == 0){
+            cuentaRegre = 20;
+            alert("Su tiempo ha finalizado. Continúa con la siguiente pregunta");
+            pregRecib();
+            reiniciarCronom();
+            cambioPreguntas();
+        }else{
+            cuentaRegre--; // Quiere decir que va reduciendo de 1 en 1.
+            setTimeout("cronom()", 1E3); //El 1E3 es igual a escribir 1000, estoy pidiendo que en 1000 milisegundos reduzca el tiempo.
+        }
+
+}
+
+//Función cantidad de preguntas recibidas.
+function pregRecib(){
+    document.getElementById("cant_de_preg").innerHTML = cantPreg + " de 4";
+
+    if(cantPreg == 5){
+        alert("Se terminó el juego");
+        document.getElementById("countdown").style.display = 'none';
+        document.getElementById("cant_de_preg").innerHTML = "4 de 4";
+        reiniciarCronom = null;
+
     }else{
-        cuentaRegre -= 1; // Quiere decir que va reduciendo de 1 en 1.
-        setTimeout(cuentaRegre, 1E3); //El 1E3 es igual a escribir 1000, estoy pidiendo que en 1000 milisegundos reduzca el tiempo.
+        cantPreg++;
+    }
+}
+
+//Función reiniciar cronómetro.
+function reiniciarCronom(){
+    document.getElementById("countdown").innerHTML = cuentaRegre;
+    if(cronom()==0){
+        cuentaRegre = 20;
     }
 }
 
 
-//Función de lectura de textos de ruta local, no global, para poder plasmar las preguntas.
-function readText(ruta_local){
-    var texto = null;
-    var xmlhttp = new XMLHttpRequest();
+//Función mostrar preguntas y alternativas.
+function mostrarPregyAlt1(){
+    document.getElementById("categoria").innerHTML = "Música";
+    document.getElementById("pregunta").innerHTML = "¿Cuál fue el álbum más vendido en la historia, de Michael Jackson?";
+    document.getElementById("resp1").innerHTML = "Off The Wall";
+    document.getElementById("resp2").innerHTML = "Thriller";
+    document.getElementById("resp3").innerHTML = "Dangerous";
+    document.getElementById("resp4").innerHTML = "Bad";
+    acomodarPanel1();
+}
 
-    xmlhttp.open("GET", ruta_local, false);
-    xmlhttp.send();
+function mostrarPregyAlt2(){
+    document.getElementById("categoria").innerHTML = "Música";
+    document.getElementById("pregunta").innerHTML = "Menciona el primer álbum de Metallica";
+    document.getElementById("resp1").innerHTML = "Kill 'Em All";
+    document.getElementById("resp2").innerHTML = "...And Justice For All";
+    document.getElementById("resp3").innerHTML = "Master Of Puppets";
+    document.getElementById("resp4").innerHTML = "Metallica(Black Album)";
+    acomodarPanel2();
+}
 
-    if(xmlhttp.status == 200){
-        texto = xmlhttp.responseText;
+function mostrarPregyAlt3(){
+    document.getElementById("categoria").innerHTML = "Música";
+    document.getElementById("pregunta").innerHTML = "¿Quién cantó I Will Always Love You?";
+    document.getElementById("resp1").innerHTML = "Sarah McLachlan";
+    document.getElementById("resp2").innerHTML = "Whitney Houston";
+    document.getElementById("resp3").innerHTML = "Tina Turner";
+    document.getElementById("resp4").innerHTML = "Celine Dion";
+    acomodarPanel3();
+}
+
+function mostrarPregyAlt4(){
+    document.getElementById("categoria").innerHTML = "Música";
+    document.getElementById("pregunta").innerHTML = "¿A qué álbum pertenece la canción Jeremy, de Pearl Jam?";
+    document.getElementById("resp1").innerHTML = "Yield";
+    document.getElementById("resp2").innerHTML = "Lightning Bolt";
+    document.getElementById("resp3").innerHTML = "Ten";
+    document.getElementById("resp4").innerHTML = "No Code";
+    acomodarPanel4();
+}
+
+//Función de acomodar todo el panel.
+function acomodarPanel1(){
+    img.setAttribute("src","../fotos trivias/música/michaeljackson.jpg");
+    img.style.width = "600px";
+    img.style.height = "370px";   
+}
+
+function acomodarPanel2(){
+    img.setAttribute("src","../fotos trivias/música/metallica.jpg");
+    img.style.width = "400px";
+    img.style.height = "300px";
+}
+
+function acomodarPanel3(){
+    img.setAttribute("src","../fotos trivias/música/titanic.jpg");
+    img.style.width = "400px";
+    img.style.height = "350px";
+}
+
+function acomodarPanel4(){
+    img.setAttribute("src","../fotos trivias/música/pearljam.jpg");
+    img.style.width = "400px";
+    img.style.height = "300px";
+}
+
+//Función cambiar preguntas.
+function cambioPreguntas(){
+    if (cantPreg == 3){
+        mostrarPregyAlt1 = null;
+        mostrarPregyAlt2();
+    }if(cantPreg == 4){
+        mostrarPregyAlt2 = null;
+        mostrarPregyAlt3();
+    }if(cantPreg == 5){
+        mostrarPregyAlt3 = null;
+        mostrarPregyAlt4();
     }
-    return texto;
 }
 
-
-//Función para que pueda escoger las preguntas de forma aleatoria en Música.
-function preguntasMusica(){
-    let base_preguntas = readText("base-preguntas-musica.json")
-    let refleja_bp = JSON.parse(base_preguntas)
-
-    preguntasMusica(Math.floor(Math.random()*refleja_bp.lenght))
-}
+cronom();
+pregRecib();
+mostrarPregyAlt1();
