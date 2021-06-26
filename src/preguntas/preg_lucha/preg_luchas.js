@@ -2,6 +2,7 @@
 var cuentaRegre = 20; //PARA CRONÓMETRO
 var cantPreg = 1; //PARA CRONÓMETRO
 
+
 //Función del cronómetro.
 function cronom(){
     document.getElementById("countdown").innerHTML = cuentaRegre;
@@ -49,6 +50,7 @@ function mostrarPregyAlt1(){
     document.getElementById("resp2").innerHTML = "AJ Styles";
     document.getElementById("resp3").innerHTML = "Walter";
     document.getElementById("resp4").innerHTML = "Brock Lesnar";
+    acomodarPanel1();
 }
 
 function mostrarPregyAlt2(){
@@ -58,6 +60,7 @@ function mostrarPregyAlt2(){
     document.getElementById("resp2").innerHTML = "World Championship Wrestling";
     document.getElementById("resp3").innerHTML = "Ring of Honor";
     document.getElementById("resp4").innerHTML = "New Japan Pro Wrestling";
+    acomodarPanel2();
 }
 
 function mostrarPregyAlt3(){
@@ -67,6 +70,7 @@ function mostrarPregyAlt3(){
     document.getElementById("resp2").innerHTML = "Kazuchika Okada";
     document.getElementById("resp3").innerHTML = "Puma King";
     document.getElementById("resp4").innerHTML = "Will Ospreay";
+    acomodarPanel3();
 }
 
 function mostrarPregyAlt4(){
@@ -76,6 +80,44 @@ function mostrarPregyAlt4(){
     document.getElementById("resp2").innerHTML = "Trish Stratus";
     document.getElementById("resp3").innerHTML = "Lita";
     document.getElementById("resp4").innerHTML = "Alundra Blayze";
+    acomodarPanel4();
+}
+
+//Función de acomodar todo el panel.
+function acomodarPanel1(){
+    var img = document.getElementById("imagen");
+    var bckgrnd = document.getElementById("fondo");
+
+    img.setAttribute("src","../fotos trivias/lucha/walter.jpg");
+    img.style.width = "600px";
+    img.style.height = "370px";
+}
+
+function acomodarPanel2(){
+    var img = document.getElementById("imagen");
+    var bckgrnd = document.getElementById("fondo");
+
+    img.setAttribute("src","../fotos trivias/lucha/ajstyles.jpg");
+    img.style.width = "400px";
+    img.style.height = "300px";
+}
+
+function acomodarPanel3(){
+    var img = document.getElementById("imagen");
+    var bckgrnd = document.getElementById("fondo");
+
+    img.setAttribute("src","../fotos trivias/lucha/willospreay.jpg");
+    img.style.width = "400px";
+    img.style.height = "350px";
+}
+
+function acomodarPanel4(){
+    var img = document.getElementById("imagen");
+    var bckgrnd = document.getElementById("fondo");
+
+    img.setAttribute("src","../fotos trivias/lucha/maeyoung.jpg");
+    img.style.width = "400px";
+    img.style.height = "300px";
 }
 
 cronom();
