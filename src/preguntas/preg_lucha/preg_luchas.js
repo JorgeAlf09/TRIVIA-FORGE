@@ -114,7 +114,6 @@ function acomodarPanel4(){
 //Función cambiar preguntas.
 function cambioPreguntas(){
     if (cantPreg == 3){
-        mostrarPregyAlt1 = null;
         mostrarPregyAlt2();
     }if(cantPreg == 4){
         mostrarPregyAlt2 = null;
