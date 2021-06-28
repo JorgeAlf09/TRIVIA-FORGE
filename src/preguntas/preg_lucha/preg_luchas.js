@@ -5,6 +5,7 @@ var img = document.getElementById("imagen");
 var bckgrnd = document.getElementById("fondo");
 
 
+
 //Función del cronómetro.
 function cronom(){
     document.getElementById("countdown").innerHTML = cuentaRegre;
@@ -14,6 +15,7 @@ function cronom(){
             pregRecib();
             reiniciarCronom();
             cambioPreguntas();
+            respCorrecta();
         }else{
             cuentaRegre--; // Quiere decir que va reduciendo de 1 en 1.
             setTimeout("cronom()", 1E3); //El 1E3 es igual a escribir 1000, estoy pidiendo que en 1000 milisegundos reduzca el tiempo.
